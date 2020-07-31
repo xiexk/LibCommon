@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MainLib</string>
+    <string name="mainlib_load_ing">数据加载中...</string>
+    <string name="mainlib_nonetwork">网络不给力,点击重试下</string>
+    <string name="mainlib_searchhint">请输入关键字</string>
+    <string name="mainlib_dialog_tip">提示信息</string>
+    <string name="mainlib_dialog_tip_content">QQ客服：915910077</string>
+    <string name="mainlib_cancle">取消</string>
+    <string name="mainlib_ok">确定</string>
+    <string name="mainlib_search_coulent">最近搜索</string>
+    <string name="mainlib_search_hot">热门搜索</string>
+    <string name="mainlib_content">内容</string>
+    <string name="mainlib_tip">提示</string>
+    <string name="mainlib_permission_rationale">请授权以下权限:\n\n%1$s</string>
+    <string name="mainlib_permission_always_failed">请在设置中设置权限:\n\n%1$s</string>
+    <string name="mainlib_setting">设置</string>
+</resources>

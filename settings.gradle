@@ -1,0 +1,2 @@
+rootProject.name='LibCommonMain'
+include ':app',':lib_common', ':lib_ptr', ':lib_photo_picker', ':lib_qrcode', ':lib_appupdate',':lib_cropper',':lib_popwindow'

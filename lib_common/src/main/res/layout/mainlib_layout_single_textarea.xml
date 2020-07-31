@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/mainlib_layout_single_textarea_tv_title"
+        android:layout_height="@dimen/space_43"
+        style="@style/text_title"
+        android:text="推荐理由："
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/mainlib_layout_single_textarea_tv_content"
+        style="@style/text_content"
+        android:text="我是内容，我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容"
+        />
+
+</LinearLayout>

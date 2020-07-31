@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="AppTheme.No">
+
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+  </style>
+
+  <!-- 文本大标题公共属性样式-->
+  <style name="text_big" parent="android:Widget.TextView">
+    <item name="android:textSize">@dimen/space_18</item>
+    <item name="android:textColor">@color/gray</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_centerInParent">true</item>
+    <item name="android:gravity">center</item>
+
+  </style>
+  <!-- 文本大标题（首页使用）-->
+  <style name="text_big_title" parent="android:Widget.TextView">
+    <item name="android:textSize">@dimen/space_15</item>
+    <item name="android:textColor">@color/gray</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_centerVertical">true</item>
+
+  </style>  <!-- 文本正常标题-->
+  <style name="text_title" parent="android:Widget.TextView">
+    <item name="android:textSize">@dimen/space_14</item>
+    <item name="android:textColor">@color/gray</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_centerVertical">true</item>
+  </style>
+
+  <!-- 文本内容content-->
+  <style name="text_content" parent="android:Widget.TextView">
+    <item name="android:textSize">@dimen/space_13</item>
+    <item name="android:textColor">@color/gray_medium</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+  <!-- content_small-->
+  <style name="text_content_small" parent="android:Widget.TextView">
+    <item name="android:textSize">@dimen/space_12</item>
+    <item name="android:textColor">@color/hint</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+
+  <!-- 编辑框文本标题公共属性样式-->
+  <style name="edittext" parent="android:Widget.EditText">
+    <item name="android:textSize">@dimen/space_14</item>
+    <item name="android:textColor">@color/gray</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColorHint">@color/hint</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:drawablePadding">@dimen/space_17</item>
+    <item name="android:background">@null</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textCursorDrawable">@drawable/commonresourcelib_cursor</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:layout_gravity">center_vertical</item>
+
+  </style>
+  <!-- 大按钮样式-->
+  <style name="button_big" parent="Widget.AppCompat.Button.Borderless">
+    <item name="android:layout_marginRight">@dimen/space_20</item>
+    <item name="android:layout_marginLeft">@dimen/space_20</item>
+    <item name="android:background">@drawable/commonresourcelib_bt_orange_conner2</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/space_55</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/space_18</item>
+  </style>
+
+  <!-- 大按钮样式没有圆角-->
+  <style name="button_big_nopadding" parent="button_big">
+    <item name="android:background">@drawable/commonresourcelib_bt_orange_conner0</item>
+  </style>
+
+  <!-- 中按钮样式-->
+  <style name="button_middle" parent="Widget.AppCompat.Button.Borderless">
+
+    <item name="android:background">@drawable/commonresourcelib_bt_orange_conner25</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/space_14</item>
+    <item name="android:minHeight">@dimen/space_30</item>
+  </style>
+
+
+
+  <!-- 小按钮样式小圆角-->
+  <style name="button_small" parent="Widget.AppCompat.Button.Borderless">
+    <item name="android:background">@drawable/commonresourcelib_bt_orange_conner2</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/space_14</item>
+    <item name="android:paddingRight">@dimen/space_0</item>
+    <item name="android:paddingLeft">@dimen/space_0</item>
+    <item name="android:paddingTop">@dimen/space_1</item>
+    <item name="android:paddingBottom">@dimen/space_1</item>
+    <item name="android:minHeight">20dp</item>
+    <item name="android:minWidth">50dp</item>
+  </style>
+  <!-- 小按钮样式-->
+  <style name="button_small2" parent="Widget.AppCompat.Button.Borderless">
+    <item name="android:background">@drawable/commonresourcelib_bt_red_conner6</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/space_14</item>
+    <item name="android:paddingRight">@dimen/space_8</item>
+    <item name="android:paddingLeft">@dimen/space_8</item>
+    <item name="android:paddingTop">@dimen/space_5</item>
+    <item name="android:paddingBottom">@dimen/space_5</item>
+    <item name="android:minHeight">20dp</item>
+    <item name="android:minWidth">50dp</item>
+  </style>
+
+
+
+  <style name="line">
+    <item name="android:background">@color/white_medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/space_1</item>
+  </style>
+
+  <style name="line_vertical">
+    <item name="android:background">@color/white_medium</item>
+    <item name="android:layout_width">@dimen/space_1</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+  <style name="line_panding">
+    <item name="android:layout_marginRight">@dimen/space_20</item>
+    <item name="android:layout_marginLeft">@dimen/space_20</item>
+    <item name="android:background">@color/white_medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/space_1</item>
+  </style>
+
+
+  <!-- CustomCheckBox theme -->
+  <style name="checkbox_black" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <item name="android:button">@drawable/commonresourcelib_checkbox_black</item>
+  </style>
+
+  <!-- CustomCheckBox theme -->
+  <style name="checkbox_round_black" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <item name="android:button">@drawable/commonresourcelib_checkbox_round_black</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/gray</item>
+    <item name="android:paddingLeft">@dimen/space_5</item>
+  </style>
+
+
+  <style name="grideview" parent="@android:style/Widget.GridView">
+
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@color/white</item>
+    <item name="android:listSelector">@null</item>
+    <item name="android:horizontalSpacing">@dimen/space_10</item>
+    <!--<ivaluename="android:verticalSpacing">@dimen/space_10</item>-->
+    <item name="android:numColumns">2</item>
+    <item name="android:paddingRight">@dimen/space_13</item>
+    <item name="android:paddingLeft">@dimen/space_13</item>
+    <item name="android:stretchMode">columnWidth</item>
+
+  </style>
+
+  <style name="grideview1" parent="@android:style/Widget.GridView">
+
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@color/white</item>
+    <item name="android:listSelector">@null</item>
+    <!--<ivaluename="android:horizontalSpacing">@dimen/space_10</item>-->
+    <item name="android:verticalSpacing">@dimen/space_10</item>
+    <item name="android:numColumns">3</item>
+    <item name="android:paddingRight">@dimen/space_13</item>
+    <item name="android:paddingLeft">@dimen/space_13</item>
+    <item name="android:stretchMode">columnWidth</item>
+
+  </style>
+
+  <!-- checkbox 样式小-->
+  <style name="CustomCheckboxThemeSmall" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <!--<ivaluename="android:button">@drawable/libv3_select_red</item>-->
+  </style>
+  <!-- checkbox 样式大-->
+  <style name="CustomCheckboxThemeBig" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <!--<ivaluename="android:button">@drawable/libv3_select_red_big</item>-->
+  </style>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <!--<ivaluename="colorPrimary">@color/colorPrimary</item>-->
+    <!--<ivaluename="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<ivaluename="colorAccent">@color/colorAccent</item>-->
+  </style>
+
+  <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <!-- ActionSheet进出动画 上下-->
+  <style name="ActionSheetDialogAnimationtopbuttom" parent="@android:style/Animation.Dialog">
+    <!--<ivaluename="android:windowEnterAnimation">@anim/libv3_actionsheet_dialogtopbuttom_in</item>-->
+    <!--<ivaluename="android:windowExitAnimation">@anim/libv3_actionsheet_dialogtopbuttom_out</item>-->
+  </style>
+
+  <!--提示框背景-->
+  <style name="style_dialog_hint"
+    parent="@android:style/Theme.Dialog">
+    <item name="android:windowFrame">@null</item><!-- 边框 -->
+    <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+    <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+    <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+    <item name="android:windowBackground">@drawable/commonresourcelib_bg_dialog_hint</item><!-- 自己想要的背景 -->
+    <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+
+  </style>
+
+  <!-- 活动弹窗样式-->
+  <style name="style_dialog_action" parent="@android:style/Theme.Dialog">
+    <item name="android:windowFrame">@null</item><!-- 边框 -->
+    <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+    <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+    <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+    <!--<ivaluename="android:windowBackground">@drawable/libv3_bg_dialog_action</item>&lt;!&ndash; 自己想要的背景 &ndash;&gt;-->
+    <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+
+  </style>
+
+  <!--等待框样式-->
+  <style name="my_progress" parent="@android:style/Theme.Dialog">
+    <!--<ivaluename="android:indeterminateDrawable">@drawable/ic_circle_progress</item>-->
+    <item name="android:windowFrame">@null</item><!--边框-->
+    <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+    <item name="android:windowIsTranslucent">false</item><!--半透明-->
+    <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+    <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+  </style>
+
+  <!-- 底部弹出框样式 -->
+  <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+    <!-- 背景透明 -->
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <!-- 浮于Activity之上 -->
+    <item name="android:windowIsFloating">true</item>
+    <!-- 边框 -->
+    <item name="android:windowFrame">@null</item>
+    <!-- Dialog以外的区域模糊效果 -->
+    <item name="android:backgroundDimEnabled">true</item>
+    <!-- 无标题 -->
+    <item name="android:windowNoTitle">true</item>
+    <!-- 半透明 -->
+    <item name="android:windowIsTranslucent">true</item>
+    <!-- Dialog进入及退出动画 -->
+    <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+  </style>
+
+  <!-- ActionSheet进出动画 -->
+  <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+    <item name="android:windowEnterAnimation">@anim/commonresourcelib_slide_down_in</item>
+    <item name="android:windowExitAnimation">@anim/commonresourcelib_slide_down_out</item>
+  </style>
+
+
+  <!-- 左侧弹出框样式 -->
+  <style name="ActionSheetDialogStyleLeftRight" parent="@android:style/Theme.Dialog">
+
+    <!-- 背景透明 -->
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <!-- 浮于Activity之上 -->
+    <item name="android:windowIsFloating">true</item>
+    <!-- 边框 -->
+    <item name="android:windowFrame">@null</item>
+    <!-- Dialog以外的区域模糊效果 -->
+    <item name="android:backgroundDimEnabled">true</item>
+    <!-- 无标题 -->
+    <item name="android:windowNoTitle">true</item>
+    <!-- 半透明 -->
+    <item name="android:windowIsTranslucent">true</item>
+    <!-- Dialog进入及退出动画 -->
+    <item name="android:windowAnimationStyle">@style/AnimationLeftRight</item>
+  </style>
+
+  <style name="AnimationLeftRight">
+    <!-- PopupWindow左右弹出的效果 -->
+    <item name="android:windowEnterAnimation">@anim/commonresourcelib_in_lefttoright</item>
+    <item name="android:windowExitAnimation">@anim/commonresourcelib_out_righttoleft</item>
+  </style>
+
+
+  <!-- 开关默认样式-->
+  <style name="SwitchButtonStyle">
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:paddingTop">4dp</item>
+    <item name="android:paddingBottom">4dp</item>
+  </style>
+  <!--左侧activity菜单样式-->
+  <style name="ActivityDialogStyle" parent="Theme.AppCompat">
+
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowFrame">@null</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:gravity">left</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowAnimationStyle">@style/AnimationLeftRight</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+
+
+  <style name="actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+    <item name="actionBarSize">32dip</item>
+  </style>
+
+  <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="actionBarTheme">@style/actionBarTheme</item>
+    <item name="colorPrimary">#FFA500</item>
+    <item name="actionBarSize">32dip</item>
+    <item name="colorPrimaryDark">#CCa500</item>
+  </style>
+
+  <style name="ImagePickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:fitsSystemWindows">true</item>
+  </style>
+
+  <style name="ImagePickerThemeFullScreen" parent="ImagePickerTheme">
+    <item name="android:fitsSystemWindows">false</item>
+  </style>
+
+  <style name="AppTh" parent="android:Theme.Light">
+    <item name="android:windowNoTitle">true</item>
+    <!--<ivaluename="android:windowIsTranslucent">true</item>  -->
+    <item name="android:windowBackground">@color/white</item>
+  </style>
+
+  <style name="AppBaseFullTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowBackground">@null</item>
+  </style>
+
+
+
+
+  <style name="MySwitch" parent="Theme.AppCompat.Light">
+    <!-- Active thumb color & Active track color(30% transparency) switch 打开时的拇指按钮的颜色 轨迹颜色默认为30%这个颜色 -->
+    <item name="colorControlActivated">@color/red</item>
+
+    <!-- Inactive thumb color switch关闭时的拇指按钮的颜色 -->
+    <item name="colorSwitchThumbNormal">@color/gray</item>
+
+    <!-- Inactive track color(30% transparency) switch关闭时的轨迹的颜色 30%这个颜色 -->
+    <item name="android:colorForeground">@color/gray</item>
+
+    <!--使用方法： 在布局文件中给需要自定义控件中增加app:theme="@style/MySwitch"-->
+  </style>
+
+
+  <style name="MyTransparent" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">@color/transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+
+  </style>
+
+
+</resources>

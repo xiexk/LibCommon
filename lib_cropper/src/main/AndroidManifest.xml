@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.app.ud361.cropper">
+  <application
+    >
+    <activity android:name=".CropActivity"/>
+  </application>
+</manifest>

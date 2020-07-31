@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:paddingLeft="@dimen/space_20"
+  android:paddingRight="@dimen/space_20"
+  android:paddingTop="@dimen/space_10"
+  android:paddingBottom="@dimen/space_10"
+  >
+  <Button
+    android:id="@+id/mainlib_layout_single_bt_middle"
+    style="@style/button_middle"
+    android:layout_marginLeft="@dimen/space_0"
+    android:layout_marginRight="@dimen/space_0"
+    android:text="提交"/>
+</LinearLayout>

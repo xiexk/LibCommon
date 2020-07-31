@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion build_versions.target_sdk
+
+  defaultConfig {
+    minSdkVersion build_versions.min_sdk
+    targetSdkVersion build_versions.target_sdk
+  }
+  lintOptions {
+    abortOnError false
+  }
+}
+
+dependencies {
+  // supports
+  api deps.support.appcompat
+  api deps.support.design
+  api deps.support.recyclerview
+  api deps.glide
+  api project(':lib_cropper')
+}
+
+

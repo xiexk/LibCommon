@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Activity：基类 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/space_43"
+  android:background="@color/white"
+  android:focusable="true"
+  android:focusableInTouchMode="true">
+
+  <!-- 返回按钮 -->
+  <LinearLayout
+    android:id="@+id/mainlib_layout_main_head_back_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/space_43"
+    android:paddingLeft="@dimen/space_20"
+    android:paddingRight="@dimen/space_14"
+    android:gravity="center">
+
+    <com.kun.common.widge.textview.TextViewIconFont
+      android:id="@+id/mainlib_layout_main_head_tv_left"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="&#xe623;"
+      android:textColor="@color/gray"
+      android:textSize="@dimen/space_25"/>
+
+  </LinearLayout>
+
+
+  <!-- 右侧按钮-->
+
+  <LinearLayout
+    android:id="@+id/mainlib_layout_main_head_layout_right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:paddingRight="@dimen/space_20"
+    android:paddingLeft="@dimen/space_14"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:id="@+id/mainlib_layout_main_head_iv_search"
+      android:layout_width="@dimen/space_25"
+      android:layout_height="@dimen/space_25"
+      android:layout_gravity="center"
+      android:layout_marginRight="@dimen/space_14"
+      android:contentDescription="@null"
+      android:visibility="gone"
+      android:src="@drawable/commonresourcelib_search_black_24dp"/>
+
+    <com.kun.common.widge.textview.TextViewIconFont
+      android:id="@+id/mainlib_layout_main_head_image_btn_right1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginRight="@dimen/space_14"
+      android:textSize="@dimen/space_25"
+      android:textColor="@color/gray"
+      android:visibility="gone"/>
+
+
+    <com.kun.common.widge.textview.TextViewIconFont
+      android:id="@+id/mainlib_layout_main_head_image_btn_right2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:textColor="@color/gray"
+      android:textSize="@dimen/space_25"
+      android:visibility="gone"/>
+
+
+  </LinearLayout>
+
+  <!--编辑框-->
+  <RelativeLayout
+    android:id="@+id/mainlib_layout_main_head_rl_search"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_28"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@id/mainlib_layout_main_head_layout_right"
+    android:layout_toRightOf="@id/mainlib_layout_main_head_back_layout"
+    android:background="@drawable/commonresourcelib_bg_gray_search_conner25"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+      android:id="@+id/mainlib_layout_main_head_iv_delete"
+      android:layout_width="@dimen/space_19"
+      android:layout_height="@dimen/space_19"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="@dimen/space_10"
+      android:layout_marginRight="@dimen/space_10"
+      android:src="@drawable/commonresourcelib_clear_gray_24dp"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_toLeftOf="@id/mainlib_layout_main_head_iv_delete"
+      android:gravity="center_vertical|center"
+      android:orientation="horizontal"
+
+      >
+
+
+      <EditText
+        android:id="@+id/mainlib_layout_main_head_et_search"
+        style="@style/edittext"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_20"
+        android:hint="@string/mainlib_searchhint"/>
+    </LinearLayout>
+
+
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/mainlib_layout_main_head_iv_search_tv_title"
+    style="@style/text_big"
+   />
+
+</RelativeLayout>

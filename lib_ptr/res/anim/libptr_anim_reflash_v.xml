@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:repeatMode="reverse"
+    android:interpolator="@android:anim/cycle_interpolator"
+    android:shareInterpolator="false"
+    >
+    <!--下拉刷新v的动画-->
+
+    <rotate android:pivotX="50%"
+        android:pivotY="50%"
+        android:fillBefore="true"
+        android:repeatCount="infinite"
+        android:duration="800"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:repeatMode="restart"
+        android:toDegrees="0"
+        android:fromDegrees="1080"
+        />
+
+    <!--<translate android:fromXDelta="0" android:toXDelta="-150"-->
+        <!--android:repeatMode="restart"-->
+        <!--android:interpolator="@android:anim/decelerate_interpolator"-->
+        <!--android:repeatCount="infinite"-->
+        <!--android:fillAfter="true"-->
+        <!--android:duration="800" />-->
+
+
+</set>

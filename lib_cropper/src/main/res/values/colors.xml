@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white_translucent">#AAFFFFFF</color>
+    <color name="black_translucent">#B0000000</color>
+    <color name="cropper_black">#000000</color>
+
+    <color name="border">@color/white_translucent</color>
+    <color name="guideline">@color/white_translucent</color>
+    <color name="corner">@android:color/white</color>
+    <color name="surrounding_area">@color/black_translucent</color>
+
+    <color name="cropper_white">#FFFFFF</color>
+    <color name="cropper_gray">#0D0D0D</color>
+    <color name="cropper_green">#7766FF00</color>
+    <color name="cropper_green_shallow">#00CD66</color>
+</resources>

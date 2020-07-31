@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yellow">#ff9500</color>
+    <color name="yellow_medium">#bbff9500</color>
+    <color name="yellow_shallow">#77ff9500</color>
+
+    <color name="yellow_light">#ffdd42</color>
+
+    <color name="green">#66FF00</color>
+    <color name="green_medium">#bb66FF00</color>
+    <color name="green_shallow">#7766FF00</color>
+    <color name="greendeep">#4bc685</color>
+    <color name="greendeep_medium">#bb4bc685</color>
+    <color name="greendeep_shallow">#774bc685</color>
+
+    <color name="blue">#18c7f3</color>
+    <color name="blue_light">#09f7f7</color>
+    <color name="blue_medium">#bb18c7f3</color>
+    <color name="blue_shallow">#7718c7f3</color>
+    <color name="pink">#FF00FF</color>
+    <color name="pink_medium">#bbFF00FF</color>
+    <color name="pink_shallow">#77FF00FF</color>
+    <!--抽奖中奖界面粉红色-->
+    <color name="pink_lucky">#f33559</color>
+    <color name="pink_lucky_shallow">#f33530</color>
+
+    <color name="red">#b60909</color>
+    <color name="red_medium">#bbb60909</color>
+    <color name="red_shallow">#77b60909</color>
+    <color name="red2">#e94546</color>
+
+    <color name="orange">#b08e5c</color>
+    <color name="orange_medium">#bbb08e5c</color>
+    <color name="orange_shallow">#77b08e5c</color>
+    <color name="black">#000000</color>
+    <color name="black_common">#171717</color>
+    <color name="black_medium">#bb000000</color>
+    <color name="black_shallow">#77000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_medium">#f0f0f0</color>
+    <color name="white_shallow">#f8f8f8</color>
+    <color name="gray">#333333</color>
+    <color name="gray_search">#ededed</color>
+    <color name="gray_medium">#bb333333</color>
+    <color name="hint">#999999</color>
+    <color name="hint_shallow">#77999999</color>
+    <color name="gray_shallow">#858585</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#aa000000</color>
+    <color name="transparent_half_low">#aa858585</color>
+
+
+</resources>

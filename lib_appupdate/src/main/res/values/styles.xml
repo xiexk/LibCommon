@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--提示框背景-->
+    <style name="appupdatlib_style_dialog_hint"
+        parent="@android:style/Theme.Dialog" >
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@drawable/appupdatelib_bg_dialog_hint</item><!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+
+    </style>
+
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item> 设置dialog的背景，此处为系统给定的透明值
+        <item name="android:windowFrame">@null</item>                Dialog的windowFrame框为无
+        <item name="android:windowNoTitle">true</item>　　　　　　　　 是否显示标题
+        <item name="android:windowIsFloating">true</item>            是否浮现在activity之上
+        <item name="android:windowIsTranslucent">true</item>         是否半透明
+        <item name="android:windowContentOverlay">@null</item>       是否有覆盖
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>   设置Activity出现方式
+        <item name="android:backgroundDimEnabled">true</item>        背景是否模糊显示
+    </style>
+
+    <!-- checkbox 样式小-->
+    <style name="AppUpdateLibCustomCheckboxThemeSmall" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/appupdatelib_select_red</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/commonresourcelib_bg_gray_conner2_token"
+    >
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="@dimen/space_0"
+        android:id="@+id/mainlib_layout_add_count_tv_cub"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        style="@style/text_content"
+        android:textColor="@color/gray_medium"
+        android:text="-"/>
+
+    <!--edittext宽度自适应因为编辑框输入的内容可能变长-->
+
+    <EditText
+        style="@style/edittext"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:id="@+id/mainlib_layout_add_count_et"
+        android:gravity="center"
+        android:minWidth="@dimen/space_20"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:maxLength="4"
+        android:background="@drawable/commonresourcelib_bg_gray_conner0_token"
+        android:text="23"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="@dimen/space_0"
+        android:id="@+id/mainlib_layout_add_count_tv_add"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        style="@style/text_content"
+        android:textColor="@color/gray_medium"
+        android:text="+"/>
+
+</LinearLayout>

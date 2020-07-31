@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_50"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mainlib_layout_edit_left_tv"
+                style="@style/text_title"
+                android:layout_marginRight="@dimen/space_10"
+                android:text="+86"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/mainlib_layout_edit_et"
+                style="@style/edittext"
+                android:layout_width="@dimen/space_300"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="用户名/手机号"
+                android:textColorHint="@color/hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainlib_layout_edit_rl_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/mainlib_layout_edit_right_iv"
+                android:layout_width="@dimen/space_2"
+                android:layout_height="@dimen/space_16"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_20"
+                android:src="@drawable/commonresourcelib_bg_gray_conner0_pre"
+                android:visibility="gone" />
+
+            <com.kun.common.widge.textview.TextViewIconFont
+                android:id="@+id/mainlib_layout_edit_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="获取验证码"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/mainlib_layout_edit_right_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_28"
+                android:layout_centerVertical="true"
+                android:background="@drawable/commonresourcelib_bt_hint_conner2_token"
+                android:paddingLeft="@dimen/space_7"
+                android:paddingTop="@dimen/space_1"
+                android:paddingRight="@dimen/space_7"
+                android:paddingBottom="@dimen/space_1"
+                android:text="获取验证码"
+                android:textColor="@color/hint"
+                android:textSize="@dimen/space_12"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+
+</LinearLayout>

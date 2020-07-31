@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/commonresourcelib_activity_base_hcf_base"
+    >
+
+<!--头部-->
+    <RelativeLayout
+        android:id="@+id/commonresourcelib_activity_base_hcf_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_shallow"
+        />
+<!--底部-->
+    <RelativeLayout
+        android:id="@+id/commonresourcelib_activity_base_hcf_fotter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_shallow"
+        />
+
+<!--内容-->
+    <RelativeLayout
+        android:id="@+id/commonresourcelib_activity_base_hcf_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/commonresourcelib_activity_base_hcf_head"
+        android:layout_above="@id/commonresourcelib_activity_base_hcf_fotter"
+            android:background="@color/white_medium"
+        >
+
+    </RelativeLayout>
+    <!--错误界面-->
+    <include layout="@layout/mainlib_layout_iv_tv"  android:id="@+id/mainlib_layout_error"/>
+
+
+
+</RelativeLayout>

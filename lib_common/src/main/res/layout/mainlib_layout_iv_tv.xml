@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:clickable="true"
+    android:paddingTop="@dimen/space_7"
+    android:paddingBottom="@dimen/space_7"
+    android:background="@drawable/commonresourcelib_bt_white_gray_null"
+    android:visibility="gone"
+    >
+
+        <ImageView
+            android:id="@+id/mainlib_layout_iv_tv_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/commonresourcelib_picture_not_found"
+            />
+        <TextView
+            style="@style/text_content"
+            android:id="@+id/mainlib_layout_iv_tv_tv"
+            android:text="@string/mainlib_nonetwork"
+            android:layout_marginTop="@dimen/space_7"
+
+            />
+
+</LinearLayout>

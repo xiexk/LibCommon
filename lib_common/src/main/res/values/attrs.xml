@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--左侧文字内容-->
+    <attr name="leftText" format="string"/>
+    <attr name="hintText" format="string"/>
+    <!--显示底部分割线-->
+    <attr name="showLine" format="boolean"/>
+    <!--右侧文字-->
+    <attr name="tvright" format="string"/>
+    <declare-styleable name="edittextmain">
+        <!--edit内容距离左侧偏移量-->
+        <attr name="editcontentmarginleft" format="dimension"/>
+        <!--显示查看隐藏密码图标-->
+        <attr name="passwordShowFunction" format="boolean"/>
+        <!--显示右侧按钮-->
+        <attr name="showRightButtom" format="boolean"/>
+        <!--editTextHint内容-->
+        <attr name="hintText"/>
+        <!--editTextHint内容-->
+        <attr name="leftText"/>
+        <!--右侧按钮文字-->
+        <attr name="rightButtonText" format="string"/>
+        <!--输入数字-->
+        <attr name="numberInput" format="boolean"/>
+        <!--输入数字-->
+        <attr name="maxlangth" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="edittextsingle" >
+        <!--左侧文字内容-->
+        <attr name="leftText"/>
+        <!--hint内容-->
+        <attr name="hintText"/>
+        <!--显示底部分割线-->
+        <attr name="showLine"/>
+    </declare-styleable>
+    <declare-styleable name="layoutsingleline">
+        <!--左侧文字-->
+        <attr name="tvleft" format="string"/>
+        <!--中间文字-->
+        <attr name="tvcenter" format="string"/>
+        <!--右侧文字-->
+        <attr name="tvright"/>
+        <!--edittext hint-->
+        <attr name="etcenterhint" format="string"/>
+        <!--左侧图片-->
+        <attr name="ivleft" format="reference"/>
+        <!--中间图片-->
+        <attr name="ivcenter" format="reference"/>
+        <!--右侧图片first-->
+        <attr name="ivrightfirst" format="reference"/>
+        <!--右侧图片end-->
+        <attr name="ivrightend" format="reference"/>
+        <!--高度自适应-->
+        <attr name="heightWrapContent" format="boolean"/>
+        <!--高度自适应-->
+        <attr name="bigcenternoright" format="boolean"/>
+        <!--展示底部线条-->
+        <attr name="showLine"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="layoutClickCheckBox">
+
+        <!--右侧文字-->
+        <attr name="tvright"/>
+
+
+    </declare-styleable>
+
+</resources>

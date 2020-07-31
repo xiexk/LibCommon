@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--PopWindow动画 底部向上-->
+    <style name="PopWindowAnim_Down_To_Up" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popwindow_down_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_down_out</item>
+    </style>
+ <!--PopWindow动画 顶部向下-->
+    <style name="PopWindowAnim_Up_To_Down" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popwindow_up_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_up_out</item>
+    </style>
+ <!--PopWindow动画 左侧向右-->
+    <style name="PopWindowAnim_Left_To_Right" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popwindow_left_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_left_out</item>
+    </style>
+ <!--PopWindow动画 右侧向左-->
+    <style name="PopWindowAnim_Right_To_Left" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popwindow_right_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_right_out</item>
+    </style>
+ <!--PopWindow动画 渐入渐出-->
+    <style name="PopWindowAnim_Alpha" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popwindow_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_alpha_out</item>
+    </style>
+
+</resources>

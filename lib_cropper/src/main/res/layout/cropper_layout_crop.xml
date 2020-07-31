@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/cropper_layout_scrollview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  android:background="@color/cropper_black"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+      android:layout_above="@+id/cropper_layout_crop_buttom"
+       >
+
+
+
+        <com.app.ud361.cropper.CropImageView
+            android:id="@+id/cropper_layout_crop_civ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+        />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+      android:id="@+id/cropper_layout_crop_buttom"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/cropper_gray"
+      android:gravity="right|center_vertical"
+      android:layout_alignParentBottom="true"
+      >
+        <Button
+          android:id="@+id/cropper_layout_crop_bt_crop"
+          style="@style/cropper_button_small"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:paddingTop="3dp"
+          android:paddingBottom="3dp"
+          android:paddingLeft="7dp"
+          android:paddingRight="7dp"
+          android:text="确定"
+          android:layout_marginRight="14dp"
+          />
+
+    </LinearLayout>
+
+</RelativeLayout>

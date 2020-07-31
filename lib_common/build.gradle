@@ -1,0 +1,105 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+android {
+    compileSdkVersion build_versions.target_sdk
+
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+        abortOnError false
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    // supports
+    api deps.support.appcompat
+    api deps.support.design
+    api deps.support.recyclerview
+    // custom lib
+    api project(':lib_ptr')
+    api project(':lib_photo_picker')
+    api project(':lib_qrcode')
+    api project(':lib_appupdate')
+
+    // tools
+    compileOnly deps.lombok
+    annotationProcessor deps.lombok
+    api deps.javax_annotation
+    api deps.eventbus
+    api deps.fastjson
+    api deps.image_loader
+    api deps.rxjava.runtime
+    api deps.rxjava.android
+    // 设置状态栏插件
+    api deps.statusBar
+    // annotation
+    api deps.dagger.runtime
+    api deps.dagger.android
+    api deps.dagger.android_support
+    annotationProcessor deps.dagger.android_support_compiler
+    annotationProcessor deps.dagger.compiler
+
+    // http
+    api deps.okhttp.okio
+    api deps.okhttp.runtime
+    api deps.okhttp.logging
+    api deps.retrofit.runtime
+    api deps.retrofit.adapter
+    // view
+    // 左滑删除
+    api deps.swipelayout
+    //首页底部导航栏
+    api deps.bottom_navigation_bar
+    //下载文件
+    api deps.filedownloader
+
+    testImplementation deps.tests.junit
+    androidTestImplementation deps.tests.test_runner
+    androidTestImplementation deps.tests.test_espresso
+
+
+}
+
+tasks.withType(Javadoc) {
+    options.addStringOption("Xdoclint:none", "-quiet")
+    options.addStringOption("encoding","UTF-8")
+}
+
+//apikey:   abed512451725a08d39ecc66d24e2402090508e7
+//用户名：   ws1349010832
+//上传命令：gradlew clean build bintrayUpload -PbintrayUser=ws1349010832 -PbintrayKey=abed512451725a08d39ecc66d24e2402090508e7 -PdryRun=false
+publish {
+    //repoName = 'maven'//仓库名
+    userOrg = 'ws1349010832'//用户名
+    groupId = 'com.kun'//生成的gradle依赖前缀。
+    artifactId = 'lib_common'//项目名
+    publishVersion = '1.0.1' //版本号
+    desc = 'Android通用工具' //描述
+    website = 'https://github.com/xiexk/LibCommon'
+    repository = 'https://github.com/xiexk/LibCommon.git'
+
+
+}

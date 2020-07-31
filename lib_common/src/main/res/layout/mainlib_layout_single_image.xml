@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/mainlib_item_single_image_ll"
+    >
+
+    <ImageView
+
+        android:id="@+id/mainlib_item_single_image_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/commonresourcelib_picture_not_found"
+        android:scaleType="fitXY"
+        />
+
+</LinearLayout>

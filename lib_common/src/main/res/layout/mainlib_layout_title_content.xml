@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_14"
+    android:background="@drawable/commonresourcelib_bt_white_gray_null"
+
+    >
+    <!--标题 内容组合界面-->
+
+    <ImageView
+        android:id="@+id/mainlib_layout_title_content_iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/commonresourcelib_search_black_24dp"
+        />
+    <LinearLayout
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/space_10"
+        >
+
+        <TextView
+            android:id="@+id/mainlib_layout_title_content_tv_title"
+            style="@style/text_title"
+            android:text="仅退款"
+            />
+
+        <TextView
+            android:id="@+id/mainlib_layout_title_content_tv_content"
+            style="@style/text_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="未收到货（包含未签收），或卖家协商同意前提下"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mainlib_layout_title_content_iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/commonresourcelib_next_gray_24dp"
+        />
+
+</LinearLayout>
